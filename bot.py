@@ -1,3 +1,5 @@
+#Please read the README.md
+
 import discord
 import asyncio
 import os
@@ -13,10 +15,6 @@ os.system("cls")
 bot = commands.Bot(command_prefix="%")
 bot.remove_command('help')
 
-
-# If you wana use it as a selfbot, change "bot.run(TOKEN)" with "bot.run(TOKEN, bot=False)" (att the end of the script). 
-# However you would need an other account to activate the commands.
-borrarpant()
 help_msg = ('''
 =======================<< Black&Red >>=======================
  %raid = Destroys the server 
@@ -36,7 +34,7 @@ embedVar = discord.Embed(title="Black&Red - Confussion", color=0x00ff00)
 embedVar.add_field(name="CMD raid", value=help_msg, inline=True)
 
 
-##BOT IS READY##
+
 @bot.event
 async def on_ready():
 	
